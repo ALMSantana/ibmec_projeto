@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot IBMEC</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header container">
+    <h1 class="header__title">Disciplina - Engenharia de Prompt</h1>
+    <h2 class="header__copyright">© Prof André Santana</h2>
+  </header>
+  <main class="main">
+    <section class="chat container" id="chat">
+      <p class="chat__bubble chat__bubble--bot">
+        Olá! Eu sou o assistente virtual criado para o projeto final da disciplina de Engenharia de Prompt. Para alterar essa mensagem busque: chatbot ~  templates ~ chat.html<br><br>Como posso ajudar?
+      </p>
+    </section>
+    <section class="input container">
+      <div class="input__box">
+        <input type="text" id="input" class="input__field" placeholder="Digite sua mensagem…" autocomplete="off" />
+        <button id="send-btn" class="input__send" aria-label="Enviar mensagem">▶</button>
+      </div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

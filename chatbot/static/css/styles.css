@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;500&display=swap');
+
+:root {
+  --ib-blue: #002555;
+  --ib-gold: #F5AC00;
+  --ib-dark-gold: #745100;
+  --ib-light-blue: #1245FF;
+  --ib-grey: #d1d3d4;
+  --ib-grey-dark: #6d6e71;
+  --radius: 0.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Krub', Tahoma, sans-serif;
+  font-size: 1.5rem;
+  background: #fff;
+  color: var(--ib-blue);
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  border-bottom: 0.16rem solid var(--ib-blue);
+}
+
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.header__copyright{
+  font-size: 0.90rem;
+  font-weight: 500;
+  color: var(--ib-dark-gold);
+  margin-right: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: calc(100vh - 8rem);
+}
+
+.chat__bubble {
+  max-width: 70%;
+  line-height: 1.4;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.chat__bubble--bot {
+  background: var(--ib-blue);
+  color: #fff;
+}
+
+.chat__bubble--bot--error {
+  background: #550006;
+  color: #fff;
+}
+
+.chat__bubble--user {
+  align-self: flex-end;
+  border: 1px solid var(--ib-blue);
+  color: var(--ib-blue);
+  background: #fff;
+}
+
+.input {
+  padding: 1rem 0;
+  border-top: 2px solid var(--ib-blue);
+  font-size: 1.2rem;
+}
+
+.input__box {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  background: #fff;
+  border: 0.1rem solid var(--ib-grey-dark);
+  border-radius: var(--radius);
+  padding: .75rem;
+  margin: 0 1.5rem;
+}
+
+.input__field {
+  flex: 1;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+.input__send {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: var(--ib-gold);
+  color: var(--ib-blue);
+  border: 0.1rem solid var(--ib-blue);
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

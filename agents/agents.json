@@ -1,0 +1,11 @@
+{
+    "meu_agente": {
+        "assistant_id": "asst_RZkAHIwEuUuUcDD7RcyXEhC8",
+        "thread_id": "thread_0IeGm1q4Yy2sHMO7ZcH08TzJ",
+        "file_ids": [
+            "file-UYLnjUEr5agwAtb4XZ2FBo"
+        ],
+        "vector_store_id": "vs_687e91bc1d18819183f5b248a8f63542",
+        "fingerprint": "d3d34f296d418c139e9cd198881cdf9bd4a48209"
+    }
+}
