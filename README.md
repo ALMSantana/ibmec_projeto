@@ -16,11 +16,15 @@ python -m venv .venv_aula_prompt
 ```
 
 ### 2.2 Ative ele para garantir que os pacotes sejam instalados apenas nele.
+
+#### Windows
 ```bash
-# Linux/macOS
-source .venv_aula_prompt/bin/activate
-# Windows (PowerShell)
 .venv_aula_prompt\Scripts\Activate.ps1
+```
+
+#### Mac/Linux
+```bash
+source .venv_aula_prompt/bin/activate
 ```
 
 ### 3. Instale as dependências
@@ -49,7 +53,7 @@ $env:FLASK_APP="chatbot.wsgi"
 flask run
 ```
 
-#### Mac
+#### Mac/Linux
 
 ```bash
 export FLASK_APP=chatbot.wsgi
