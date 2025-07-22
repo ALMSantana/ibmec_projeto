@@ -10,7 +10,6 @@
 ### 2.1 Crie um ambiente virtual
 - Verifique sua versão do Python, algumas vezes pode ser necessário tentar com python3 ao invés de python.
 ```bash
-cd chatbot_app
 python -m venv .venv_aula_prompt
 ```
 
