@@ -2,8 +2,10 @@
 
 ### 1. Pré‑requisitos
 
-* Python ≥ 3.10. Baixe [aqui](https://www.python.org/downloads/) se ainda não tiver.
-* Conta na OpenAI e **OPENAI\_API\_KEY** válida.
+* Python ≥ 3.10. Baixe [aqui](https://www.python.org/downloads/) se ainda não tiver. Lembre-se de marcar a opção "ADD PYTHON 3.XX to PATH.
+* Baixe o VSCode e instale também a extensão Python.
+
+> Necessário: Conta na OpenAI e **OPENAI\_API\_KEY** válida.
 
 ### 2. Clone e crie um ambiente virtual
 
@@ -41,9 +43,16 @@ PERSONA_MODEL=gpt-3.5-turbo-0125
 
 ### 5. Rode a aplicação
 
+#### Windows
 ```bash
-export FLASK_APP=chatbot.wsgi        # Linux/macOS
-$env:FLASK_APP="chatbot.wsgi"        # Windows PowerShell
+$env:FLASK_APP="chatbot.wsgi"
+flask run
+```
+
+#### Mac
+
+```bash
+export FLASK_APP=chatbot.wsgi
 flask run
 ```
 
